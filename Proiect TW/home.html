@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>APAX</title>
+<link rel="stylesheet" href="style_home.css">
+</head>
+
+<body>
+
+<div class="header">
+<a href="#">Acasa</a>
+<a href="#">Despre</a>
+<a href="#">Contact</a>
+<a href="#">Limba</a>
+<div class="header-right">
+<input type="text" placeholder="Nume de utilizator" name="username"></input>
+<input type="text" placeholder="Parola" name="password"></input>
+<button type="submit">Logare</button>
+<button>Inregistrare</button>
+</div>
+</div>
+
+<img class="mySlides" src="StockSnap_CWHC0BHB89.jpg">
+<img class="mySlides" src="StockSnap_G3UYYCGBTS.jpg">
+<img class="mySlides" src="StockSnap_LQAOB9JBAR.jpg">
+<img class="mySlides" src="StockSnap_LQAOB9JBAR.jpg">
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 5000);
+}
+</script>
+
+
+<div class="navigation">
+<a href="#">Meniu</a>
+<a onclick="openNav()">Vizualizati datele din 2016</a>
+<a onclick="openNav()">Vizualizati datele din 2017</a>
+<a onclick="openNav()">Vizualizati datele din 2018</a>
+<a onclick="openNav()">Vizualizati datele din 2019</a>
+<a onclick="openNav()">Vizualizati datele din 2020</a>
+</div>
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Vizualizati statistici</a>
+  <a href="#">Compara</a>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "288px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+</body>
+
+</html>

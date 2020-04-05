@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>APAX</title>
+<link rel="stylesheet" href="style_register.css">
+</head>
+
+<body>
+
+<div class="header">
+<a href="#">Acasa</a>
+<a href="#">Despre</a>
+<a href="#">Contact</a>
+<a href="#">Limba</a>
+<div class="header-right">
+<input type="text" placeholder="Nume de utilizator" name="username"></input>
+<input type="text" placeholder="Parola" name="password"></input>
+<button type="submit">Logare</button>
+<button>Inregistrare</button>
+</div>
+</div>
+
+<img class="mySlides" src="StockSnap_CWHC0BHB89.jpg">
+<img class="mySlides" src="StockSnap_G3UYYCGBTS.jpg">
+<img class="mySlides" src="StockSnap_LQAOB9JBAR.jpg">
+<img class="mySlides" src="StockSnap_LQAOB9JBAR.jpg" >
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 5000);
+}
+</script>
+
+
+<div class="welcome">
+<h1>Bine ati venit!</h1>
+<h2>Pentru a crea un cont, completati informatiile urmatoare.</h2>
+</div>
+
+<form>
+<div class="register">
+<label for="username">Nume utilizator</label>
+<input type="text" placeholder="Introduceti nume de utilizator" name="username"></input>
+<label for="email">Email</label>
+<input type="text" placeholder="Introduceti email" name="email"></input>
+<label for="psw">Parola</label>
+<input type="password" placeholder="Introduceti parola" name="psw"></input>
+<label for="cpsw">Confirmati parola</label>
+<input type="password" placeholder="Reintroduceti parola" name="cpsw"></input>
+<button type="submit">Inregistrare</button>
+<p>Ai deja un cont?<a href="#">Logheaza-te.</a></p>
+</div>
+</form>
+
+</body>
+
+</html>
