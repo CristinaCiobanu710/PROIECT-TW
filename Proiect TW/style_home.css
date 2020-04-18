@@ -1,7 +1,3 @@
-body{
-	background-color:powderblue;
-}
-
 .header {
 	position:static;
   overflow: hidden;
@@ -10,18 +6,19 @@ body{
 }
 
 .header a {
+	cursor:pointer;
   float: left;
   color: white;
   text-align: center;
-  padding: 12px;
+  padding: 15px;
   text-decoration: none;
-  font-size: 18px; 
+  font-size: 17px; 
   line-height: 25px;
   border-radius: 4px;
 }
 
 .header a:hover {
-  background-color: #ddd;
+  background-color: white;
   color: black;
 }
 
@@ -62,42 +59,22 @@ img{
   width: 100%;
 }
 
-.navigation {
-	position:static;
-	top:450px;
-  height: 450px;
-  width: 15%;
-  left: 8px;
-  background-color:black;
-}
-
-.navigation a {
-  text-decoration: none;
-  font-size: 20px;
-  color: white;
-  display: block;
-  margin:35px 10px;
-}
-
-.navigation a:hover{
-	background-color:#ddd;
-	color:black;
-}
-
 .sidenav {
-  height: 550px;
+  height: 300px;
   width: 0;
   position: fixed;
   z-index: 1;
-  top: 450px;
+  top: 93px;
   left: 8px;
   background-color:black;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  text-align:center;
 }
 
 .sidenav a {
+	cursor:pointer;
   padding: 8px 8px;
   text-decoration: none;
   font-size: 20px;
@@ -107,7 +84,7 @@ img{
 }
 
 .sidenav a:hover {
- background-color: #ddd;
+ background-color: white;
   color: black;
 }
 
@@ -115,6 +92,81 @@ img{
   position: absolute;
   top: 0;
   right: 5px;
-  font-size: 20px;
+  font-size: 15px;
   margin-left: 5px;
 }
+
+.sidenav1 {
+  height: 300px;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 93px;
+  left: 8px;
+  background-color:black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  text-align:center;
+  padding-top: 60px;
+}
+
+.sidenav1 a {
+	cursor:pointer;
+  padding: 8px 8px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav1 a:hover {
+ background-color: white;
+  color: black;
+}
+
+.sidenav1 .closebtn {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+.sidenav2 {
+  height: 300px;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 93px;
+  left: 8px;
+  background-color:black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  text-align:center;
+  padding-top: 60px;
+}
+
+.sidenav2 a {
+	cursor:pointer;
+  padding: 8px 8px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav2 a:hover {
+ background-color: white;
+  color: black;
+}
+
+.sidenav2 .closebtn {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 15px;
+  margin-left: 5px;
+}
+

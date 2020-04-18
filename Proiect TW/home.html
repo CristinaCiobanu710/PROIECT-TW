@@ -10,15 +10,16 @@
 <body>
 
 <div class="header">
-<a href="#">Acasa</a>
+<a href="home.html">Acasa</a>
+<a onclick="openNav()">Meniu</a>
+<a onclick="openNav1()">Limba</a>
 <a href="#">Despre</a>
 <a href="#">Contact</a>
-<a href="#">Limba</a>
 <div class="header-right">
 <input type="text" placeholder="Nume de utilizator" name="username"></input>
 <input type="text" placeholder="Parola" name="password"></input>
 <button type="submit">Logare</button>
-<button>Inregistrare</button>
+<button onclick="window.location.href='register.html'">Inregistrare</button>
 </div>
 </div>
 
@@ -45,29 +46,54 @@ function carousel() {
 </script>
 
 
-<div class="navigation">
-<a href="#">Meniu</a>
-<a onclick="openNav()">Vizualizati datele din 2016</a>
-<a onclick="openNav()">Vizualizati datele din 2017</a>
-<a onclick="openNav()">Vizualizati datele din 2018</a>
-<a onclick="openNav()">Vizualizati datele din 2019</a>
-<a onclick="openNav()">Vizualizati datele din 2020</a>
-</div>
-
-
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">Vizualizati statistici</a>
+  <a onclick="openNav2()">Vizualizati statistici</a>
   <a href="#">Compara</a>
 </div>
 
 <script>
 function openNav() {
-  document.getElementById("mySidenav").style.width = "288px";
+  document.getElementById("mySidenav").style.width = "200px";
 }
 
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
+   document.getElementById("mySidenav").style.width = "0px";
+}
+</script>
+
+<div id="mySidenav1" class="sidenav1">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+  <a href="#">Romana</a>
+  <a href="#">Engleza</a>
+</div>
+
+<script>
+function openNav1() {
+  document.getElementById("mySidenav1").style.width = "200px";
+}
+
+function closeNav1() {
+   document.getElementById("mySidenav1").style.width = "0px";
+}
+</script>
+
+<div id="mySidenav2" class="sidenav2">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+  <a href="#">2015</a>
+  <a href="#">2016</a>
+  <a href="#">2017</a>
+  <a href="#">2018</a>
+  <a href="#">2019</a>
+</div>
+
+<script>
+function openNav2() {
+  document.getElementById("mySidenav2").style.width = "200px";
+}
+
+function closeNav2() {
+   document.getElementById("mySidenav2").style.width = "0px";
 }
 </script>
 
