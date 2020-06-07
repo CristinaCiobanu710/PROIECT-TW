@@ -3,7 +3,7 @@
 
 <head>
 <meta charset="utf-8">
-<title>APAX</title>
+<title>APaX</title>
 <link rel="stylesheet" href="style_register.css">
 </head>
 
@@ -28,37 +28,15 @@
 <img class="mySlides" src="StockSnap_LQAOB9JBAR.jpg">
 <img class="mySlides" src="StockSnap_LQAOB9JBAR.jpg" >
 
-<script>
-var myIndex = 0;
-carousel();
+<script src="slideShow.js"></script>
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}
-  x[myIndex-1].style.display = "block";
-  setTimeout(carousel, 5000);
-}
-</script>
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a onclick="openNav2()">Vizualizati statistici</a>
   <a href="#">Compara</a>
 </div>
 
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "200px";
-}
-
-function closeNav() {
-   document.getElementById("mySidenav").style.width = "0px";
-}
-</script>
+<script src="sideNav1.js"></script>
 
 <div id="mySidenav1" class="sidenav1">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
@@ -66,15 +44,7 @@ function closeNav() {
   <a href="#">Engleza</a>
 </div>
 
-<script>
-function openNav1() {
-  document.getElementById("mySidenav1").style.width = "200px";
-}
-
-function closeNav1() {
-   document.getElementById("mySidenav1").style.width = "0px";
-}
-</script>
+<script src="sideNav2.js"></script>
 
 <div id="mySidenav2" class="sidenav2">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
@@ -85,15 +55,7 @@ function closeNav1() {
   <a href="#">2019</a>
 </div>
 
-<script>
-function openNav2() {
-  document.getElementById("mySidenav2").style.width = "200px";
-}
-
-function closeNav2() {
-   document.getElementById("mySidenav2").style.width = "0px";
-}
-</script>
+<script src="sideNav3.js"></script>
 
 <div class="welcome">
 <h1>Bine ati venit!</h1>
