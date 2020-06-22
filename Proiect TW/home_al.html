@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -17,12 +17,7 @@
 <a href="contact.html">Contact</a>
 
 <div class="header-right">
-<form action="login.php" method="post">
-<input type="text" placeholder="Nume de utilizator" name="username">
-<input type="password" placeholder="Parola" name="password">
-<button type="submit">Logare</button>
-</form>
-<button onclick="window.location.href='register.html'">Nu ai cont?Inregistreaza-te</button>
+<button onclick="window.location.href='home.html'">Delogheaza-te</button>
 </div>
 </div>
 
@@ -35,28 +30,27 @@
 
 
 <div id="mySidenav" class="sidenav">
-  <a onclick="closeNav()">&times;</a>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a onclick="openNav2()">Vizualizati statistici</a>
-  <a onclick="show_alert()">Compara</a>
+  <a href="javascript:void(0)" onclick="show_alert()">Compara</a>
 </div>
 
 <script src="sideNav1.js"></script>
 
 <div id="mySidenav1" class="sidenav1">
-  <a onclick="closeNav1()">&times;</a>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
   <a href="#">Romana</a>
   <a href="#">Engleza</a>
 </div>
 
 <script src="sideNav2.js"></script>
-<script src="alert.js"></script>
 <div id="mySidenav2" class="sidenav2">
-  <a onclick="closeNav2()">&times;</a>
-  <a onclick="show_alert()">2015</a>
-  <a onclick="show_alert()">2016</a>
-  <a onclick="show_alert()">2017</a>
-  <a onclick="show_alert()">2018</a>
-  <a onclick="show_alert()">2019</a>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+  <a href="javascript:void(0)" onclick="show_alert()">2015</a>
+  <a href="javascript:void(0)" onclick="show_alert()">2016</a>
+  <a href="javascript:void(0)" onclick="show_alert()">2017</a>
+  <a href="javascript:void(0)" onclick="show_alert()">2018</a>
+  <a href="javascript:void(0)" onclick="show_alert()">2019</a>
 </div>
 
 <script src="sideNav3.js"></script>

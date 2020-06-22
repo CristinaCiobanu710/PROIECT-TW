@@ -17,6 +17,7 @@
   border-radius: 4px;
 }
 
+
 .header a:hover {
   background-color: white;
   color: black;
@@ -28,9 +29,7 @@
 }
 
 .header-right {
-	
   float: right;
-    padding: 10px 10px;
 }
 
 .header-right button{
@@ -40,6 +39,7 @@
 	text-align:center;
 	cursor:pointer;
 }
+
 
 @media screen and (max-width: 500px) {
   .header a {
@@ -51,6 +51,7 @@
   .header-right {
     float: none;
   }
+  
 }
 
 img{
@@ -170,15 +171,11 @@ img{
 }
 
 
+
 .textArea p{
-	position:absolute;
-	top:750px;
-	width:700px;
-	height:400px;
 	color:black;
-	left:500px;
 	font-size:20px;
-	text-align:left;
+	text-align:center;
 }
 
 .textArea p a{
@@ -186,47 +183,30 @@ img{
 }
 
 .textArea h1{
-	position:absolute;
-	top:500px;
 	color:black;
-	left:720px;
+	text-align:center;
 }
 
 .textArea h2{
-	position:absolute;
-	top:600px;
 	color:black;
-	left:500px;
-	text-align:left;
+	text-align:center;
 }
 
 
 .textArea h3{
-	position:absolute;
-	top:700px;
 	color:black;
-	left:500px;
 	text-align:center;
 }
-/*
-
-.textArea a{
-	position:absolute;
-	top:700px;
-	color:blue;
-	left:500px;
-	text-align:center;
-}*/
-
 
 .box :hover{
 	background-color: gray;
 }
 
 .box1{
-	position:absolute;
-	top:500px;
-	width:400px;
+	vertical-align:top;
+		position:static;
+	display:inline-block;
+	width:446px;
 	height:300px;
 	padding: 10px;
   border: 3px solid gray;
@@ -245,9 +225,10 @@ img{
 }
 
 .box2{
-	position:absolute;
-	top:850px;
-	width:400px;
+		vertical-align:top;
+		position:static;
+		display:inline-block;
+	width:446px;
 	height:300px;
 	padding: 10px;
   border: 3px solid gray;
@@ -266,10 +247,10 @@ img{
 }
 
 .box3{
-	position:absolute;
-	top:850px;
-	width:400px;
-	right:10px;
+		vertical-align:top;
+		position:static;
+	display:inline-block;
+	width:446px;
 	height:300px;
 	padding: 10px;
   border: 3px solid gray;
@@ -288,10 +269,10 @@ img{
 }
 
 .box4{
-	position:absolute;
-	top:500px;
-	width:400px;
-	right:10px;
+		vertical-align:top;
+	position:static;
+	display:inline-block;
+	width:433px;
 	height:300px;
 	padding: 10px;
   border: 3px solid gray;
