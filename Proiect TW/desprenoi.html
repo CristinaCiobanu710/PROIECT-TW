@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Despre noi</title>
+        <link rel="stylesheet" href="style_home.css">
+        <link rel="stylesheet" href="desprestil.css">
+    </head>
+    
+    <body>
+
+    <div class="header">
+        <a href="home.html">Acasa</a>
+        <a onclick="openNav()">Meniu</a>
+        <a onclick="openNav1()">Limba</a>
+        <a href="#">Despre</a>
+        <a href="contact.html">Contact</a>
+
+        <div class="header-right">
+            <form action="login.php" method="post">
+                <input type="text" placeholder="Nume de utilizator" name="username">
+                <input type="password" placeholder="Parola" name="password">
+                <button type="submit">Logare</button>
+            </form>
+            <button onclick="window.location.href='register.html'">Nu ai cont?Inregistreaza-te</button>
+        </div>
+    </div>
+
+
+    <div id="mySidenav" class="sidenav">
+        <a onclick="closeNav()">&times;</a>
+        <a onclick="openNav2()">Vizualizati statistici</a>
+        <a onclick="show_alert()">Compara</a>
+    </div>
+
+    <script src="sideNav1.js"></script>
+
+    <div id="mySidenav1" class="sidenav1">
+        <a onclick="closeNav1()">&times;</a>
+        <a href="#">Romana</a>
+        <a href="#">Engleza</a>
+    </div>
+
+    <script src="sideNav2.js"></script>
+    <script src="alert.js"></script>
+    <div id="mySidenav2" class="sidenav2">
+        <a onclick="closeNav2()">&times;</a>
+        <a onclick="show_alert()">2015</a>
+        <a onclick="show_alert()">2016</a>
+        <a onclick="show_alert()">2017</a>
+        <a onclick="show_alert()">2018</a>
+        <a onclick="show_alert()">2019</a>
+    </div>
+
+    <script src="sideNav3.js"></script>
+        
+        <div class="echipa">
+            <h1>Echipa noastră</h1>
+            <span class="border"></span>
+            <div class="poze">
+                <a href="#codrin"><img src="imagini/codrin.jpg"></a>
+                <a href="#cristina"><img src="imagini/cristina.jpg"></a>
+                <a href="#teodor"><img src="imagini/teodor.jpg"></a>
+            </div>
+            <div class="section" id="cristina">
+                <span class="name">Cristina Mihaela</span>
+                <span class="border"></span>
+                <p>Coechipiera echipei, Cristina este din Huși. Aceasta este în prezent studentă a Facultății de Informatică din Iași. </p>
+            </div>
+            <div class="section" id="codrin">
+                <span class="name">Codrin Postul</span>
+                <span class="border"></span>
+                <p>Coechipierul proiectului Codrin este din Iași. Acesta studiază în momentul actual la Facultatea de Informatică din Iași. </p>
+            </div>
+            <div class="section" id="teodor">
+                <span class="name">Teodor Paduraru</span>
+                <span class="border"></span>
+                <p>Coechipierul proiectului Teodor este din Iași. Acesta urmează studiile în prezent la Facultatea de Informatică din Iași. </p>
+            </div>
+
+        </div>
+
+    <footer>
+        <p> © Cristina Mihaela, Postu Codrin, Paduraru Teodor 2020 </p>
+    </footer>
+    </body>
+</html>
