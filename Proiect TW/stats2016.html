@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>APaX - Statistici 2015</title>
+    <link rel="stylesheet" href="style_home.css">
+    <link rel="stylesheet" href="stats.css">
+    <link rel="stylesheet" href="barchart.scss">
+</head>
+
+<body>
+
+<div class="header">
+    <a href="home.html">Acasa</a>
+    <a onclick="openNav()">Meniu</a>
+    <a onclick="openNav1()">Limba</a>
+    <a href="#">Despre</a>
+    <a href="contact.html">Contact</a>
+</div>
+
+
+<div id="mySidenav" class="sidenav">
+    <a onclick="closeNav()">&times;</a>
+    <a onclick="openNav2()">Vizualizati statistici</a>
+    <a onclick="show_alert()">Compara</a>
+</div>
+
+<script src="sideNav1.js"></script>
+
+<div id="mySidenav1" class="sidenav1">
+    <a onclick="closeNav1()">&times;</a>
+    <a href="#">Romana</a>
+    <a href="#">Engleza</a>
+</div>
+
+<script src="sideNav2.js"></script>
+<script src="alert.js"></script>
+<div id="mySidenav2" class="sidenav2">
+    <a onclick="closeNav2()">&times;</a>
+    <a onclick="show_alert()">2015</a>
+    <a onclick="show_alert()">2016</a>
+    <a onclick="show_alert()">2017</a>
+    <a onclick="show_alert()">2018</a>
+    <a onclick="show_alert()">2019</a>
+</div>
+
+<script src="sideNav3.js"></script>
+
+<h2>Statistici anul 2016</h2>
+
+<div class="card">
+    <p>Numar vehicule</p>
+    <p class="stat_number">6444883</p>
+</div>
+<div class="card">
+    <p>Numar marci</p>
+    <p class="stat_number">2570</p>
+</div>
+<div class="card">
+    <p>Numar categorii</p>
+    <p class="stat_number">32</p>
+</div>
+
+<h2>Judetele cu cele mai multe autoturisme</h2>
+<figure aria-hidden="true">
+    <div class="graph">
+        <span class="graphRowLabel">200,000</span>
+        <span class="graphRowLabel">180,000</span>
+        <span class="graphRowLabel">160,000</span>
+        <span class="graphRowLabel">140,000</span>
+        <span class="graphRowLabel">120,000</span>
+        <span class="graphRowLabel">100,000</span>
+        <span class="graphRowLabel">80,000</span>
+        <span class="graphRowLabel">60,000</span>
+        <span class="graphRowLabel">40,000</span>
+        <span class="graphRowLabel">20,000</span>
+        <div class="graphBar" style="grid-column: 2; --h: 56%;"></div>
+        <div class="graphBar" style="grid-column: 3; --h: 82%;"></div>
+        <div class="graphBar" style="grid-column: 4; --h: 63%;"></div>
+        <div class="graphBar" style="grid-column: 5; --h: 52%;"></div>
+        <div class="graphBar" style="grid-column: 6; --h: 45%;"></div>
+        <span>Judete</span>
+        <span class="graphColumnLabel">Iasi</span>
+        <span class="graphColumnLabel">Bacau</span>
+        <span class="graphColumnLabel">Bucuresti</span>
+        <span class="graphColumnLabel">Galati</span>
+        <span class="graphColumnLabel">Timisoara</span>
+    </div>
+</figure>
+
+<h2>Tabel autoturisme</h2>
+<div class="table-wrapper">
+    <table class="fl-table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Judet</th>
+            <th>Categorie</th>
+            <th>Marca</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Content 1</td>
+            <td>Content 1</td>
+            <td>Content 1</td>
+            <td>Content 1</td>
+        </tr>
+        <tr>
+            <td>Content 2</td>
+            <td>Content 2</td>
+            <td>Content 2</td>
+            <td>Content 2</td>
+        </tr>
+        <tr>
+            <td>Content 3</td>
+            <td>Content 3</td>
+            <td>Content 3</td>
+            <td>Content 3</td>
+        </tr>
+        <tbody>
+    </table>
+</div>
+
+<script src="chart.js"></script>
+
+</body>
+</html>

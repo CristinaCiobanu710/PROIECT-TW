@@ -1,0 +1,218 @@
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body{
+    text-align: center;
+    font-family: Helvetica;
+    -webkit-font-smoothing: antialiased;
+}
+h2{
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: black;
+    padding: 30px 0;
+}
+
+/* Graph Styles */
+
+.graph {
+    display: grid;
+    grid: repeat(10, auto) max-content / max-content repeat(5, auto);
+    height: 100%;
+}
+
+.graphBar {
+    grid-row: 1 / -2;
+    border-radius: 0 0 50% 50% / 0 0 10px 10px;
+    background: #324960
+    linear-gradient(to top, #4FC3A1 var(--h), transparent var(--h));
+    justify-self: center;
+    width: 45px;
+    height: 100%;
+    box-shadow: 0 0 3px lightgrey;
+}
+
+.graphBar::before,
+.graphBar::after {
+    display: block;
+    content: "";
+    height: 20px;
+    border-radius: 50% / 10px;
+}
+.graphBar::before {
+    margin-top: -10px;
+    background-color: gray;
+}
+.graphBar::after {
+    background-color: #41A386;
+    position: relative;
+    top: calc(100% - var(--h) - 20px);
+}
+.graphRowLabel {
+    margin-top: -0.5em;
+}
+.graphColumnLabel {
+    justify-self: center;
+    margin-top: 6px;
+    text-shadow: 0 0 2px palegoldenrod;
+    font-size: 14pt;
+}
+figure {
+    width: 98vw;
+    max-width: 600px;
+    height: 420px;
+    margin: 60px auto auto auto;
+}
+figcaption {
+    text-align: center;
+    margin-top: 30px;
+}
+h1 {
+    text-align: center;
+    font-size: 14pt;
+    margin-bottom: 0;
+}
+.screenreader-text {
+    display: block;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+
+/* Card Styles */
+
+.card p {
+    text-align: center;
+}
+.stat_number {
+    color: #41A386;
+    font-size: 3em;
+}
+
+.card {
+    background: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    text-align: center;
+    height: 150px;
+    margin: 1rem;
+    position: center;
+    width: 300px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+/* Table Styles */
+
+.table-wrapper{
+    margin: 10px 70px 70px;
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+}
+
+.fl-table {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+.fl-table td, .fl-table th {
+    text-align: center;
+    padding: 8px;
+}
+
+.fl-table td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 12px;
+}
+
+.fl-table thead th {
+    color: #ffffff;
+    background: #4FC3A1;
+}
+
+
+.fl-table thead th:nth-child(odd) {
+    color: #ffffff;
+    background: #324960;
+}
+
+.fl-table tr:nth-child(even) {
+    background: #F8F8F8;
+}
+
+/* Responsive */
+
+@media (max-width: 767px) {
+    .fl-table {
+        display: block;
+        width: 100%;
+    }
+    .table-wrapper:before{
+        content: "Scroll horizontally >";
+        display: block;
+        text-align: right;
+        font-size: 11px;
+        color: white;
+        padding: 0 0 10px;
+    }
+    .fl-table thead, .fl-table tbody, .fl-table thead th {
+        display: block;
+    }
+    .fl-table thead th:last-child{
+        border-bottom: none;
+    }
+    .fl-table thead {
+        float: left;
+    }
+    .fl-table tbody {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+    }
+    .fl-table td, .fl-table th {
+        padding: 20px .625em .625em .625em;
+        height: 60px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 120px;
+        font-size: 13px;
+        text-overflow: ellipsis;
+    }
+    .fl-table thead th {
+        text-align: left;
+        border-bottom: 1px solid #f7f7f9;
+    }
+    .fl-table tbody tr {
+        display: table-cell;
+    }
+    .fl-table tbody tr:nth-child(odd) {
+        background: none;
+    }
+    .fl-table tr:nth-child(even) {
+        background: transparent;
+    }
+    .fl-table tr td:nth-child(odd) {
+        background: #F8F8F8;
+        border-right: 1px solid #E6E4E4;
+    }
+    .fl-table tr td:nth-child(even) {
+        border-right: 1px solid #E6E4E4;
+    }
+    .fl-table tbody td {
+        display: block;
+        text-align: center;
+    }
+}
